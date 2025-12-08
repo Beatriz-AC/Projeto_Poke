@@ -123,6 +123,6 @@ function createCardHTML(data) {
 
 // Inicializar com alguns Pokémons
 (async function init() {
-  await fetchAndCreateCard("pikachu");
+  await fetchAndCreateCard("umbreon");
   
 })();

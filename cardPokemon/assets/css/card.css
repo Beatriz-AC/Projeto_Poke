@@ -1,8 +1,57 @@
-img{
-    width: 140px;
-    height: 140px;
-}  
-.pokemon-card{
-    border:1px solid #ccc;
-    max-width: 300px;
+img {
+  width: 140px;
+  height: 140px;
 }
+
+.pokemon-card {
+  border: 1px solid #ccc;
+  max-width: 300px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pokedex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.type-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: white;
+  font-size: 0.8em;
+  margin-right: 5px;
+}
+
+.card-header {
+  text-align: center;
+  padding: 10px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-bg {
+  background-color: #eee;
+  height: 8px;
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.progress-fill {
+  height: 8px;
+  border-radius: 4px;
+}
+
