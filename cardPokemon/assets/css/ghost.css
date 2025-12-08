@@ -1,0 +1,135 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1c1c1c; 
+    color: #e0e0e0; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+   width: 140px;
+    height: 140px;
+    object-fit: contain;
+}
+
+.pokemon-card {
+    border:1px solid #5e5e5e;
+    max-width: 300px;
+}
+
+.page-header {
+    background-color: #262626;
+    padding: 15px 30px;
+    border-bottom: 3px solid #38395d; 
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-icon {
+    font-size: 1.8em;
+    margin-right: 15px;
+}
+
+h1 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+.pokemon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.pokemon-card {
+    flex-basis: calc(25% - 20px); 
+    min-width: 180px; 
+    
+    background-color: #2c2c2c; 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-3px);
+    border-color: #f0f0f0; 
+}
+
+.card-header {
+    height: 150px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #4a4a4a; 
+}
+
+
+.card-body {
+    padding: 15px 10px;
+    text-align: left;
+}
+
+.poke-name {
+    text-align: center;
+    font-size: 1.1em;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    text-transform: capitalize;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 0.85em;
+    color: #ccc;
+}
+
+.info-box {
+    flex: 1;
+    text-align: left;
+    padding: 0 5px;
+}
+
+.info-box h4 {
+    margin: 0 0 2px 0;
+    font-size: 0.7em;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.info-box p {
+    margin: 0;
+    font-weight: bold;
+    color: #f9d71c; 
+}
+
+
+.abilities {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    font-size: 0.75em;
+    color: #ccc;
+}
+.abilities strong {
+    color: #ffffff;
+}
