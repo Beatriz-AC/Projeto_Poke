@@ -107,14 +107,14 @@ const fairyPokemonList = [
   "Florges",
   "Gardevoir",
   "Granbull",
-  "Enamorus",
+  "klefki",
   "grimmsnarl",
   "swirlix",
-  "ribbombee",
-  "magear",
-  "dragapult",
-  "chandelure",
-  "palossand"
+  "tinkaton",
+  "magearna",
+  "xerneas",
+  "sylveon",
+  "wigglytuff",
 ];
 
 
