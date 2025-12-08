@@ -103,18 +103,18 @@ card.classList.add("pokemon-card");
 
 
 const poisonPokemonList = [
-"spectrier",
-  "banette",
-  "ceruledge",
-  "jellicent",
-  "annihilape",
-  "typhlosion-hisui",
-  "litwick",
-  "bramblin",
-  "drifblim",
-  "dragapult",
-  "chandelure",
-  "palossand"
+"bulbasaur",
+  "ivysaur",
+  "venusaur",
+  "weedle",
+  "tentacruel",
+  "stunky",
+  "gulpin",
+  "roselia",
+  "crobat",
+  "ariados",
+  "koffing",
+  "gengar",
 ];
 
 
