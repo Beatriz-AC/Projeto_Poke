@@ -103,18 +103,18 @@ card.classList.add("pokemon-card");
 
 
 const poisonPokemonList = [
-"bulbasaur",
-  "ivysaur",
+  "Ekans",
+  "Arbok",
   "venusaur",
-  "weedle",
   "tentacruel",
-  "stunky",
-  "gulpin",
-  "roselia",
-  "crobat",
-  "ariados",
-  "koffing",
-  "gengar",
+  "weezing",
+  "golbat",
+  "slowbro",
+  "Beedrill",
+  "Zubat",
+  "Nidoqueen",
+  "muk",
+  "Bulbasaur",
 ];
 
 
