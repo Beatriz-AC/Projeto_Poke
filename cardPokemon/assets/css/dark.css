@@ -8,23 +8,27 @@ body {
     box-sizing: border-box;
 }
 
+/*imagem*/
 img {
    width: 140px;
     height: 140px;
     object-fit: contain;
 }
 
+/*config dos cards*/
 .pokemon-card {
     border:1px solid #5e5e5e;
     max-width: 300px;
 }
 
+/*parte de cima do site*/
 .page-header {
     background-color: #262626;
     padding: 15px 30px;
     border-bottom: 3px solid #38395d; 
 }
 
+/* div da parte de cima do site*/
 .header-content {
     display: flex;
     align-items: center;
@@ -32,11 +36,13 @@ img {
     margin: 0 auto;
 }
 
+/*parte de cima do site icon*/
 .home-icon {
     font-size: 1.8em;
     margin-right: 15px;
 }
 
+/*parte de cima do site escrita*/
 h1 {
     font-size: 1.8em;
     font-weight: 600;
@@ -54,9 +60,8 @@ h1 {
     margin: 0 auto;
 }
 
-
+/*card dos poke*/
 .pokemon-card {
-    flex-basis: calc(25% - 20px); 
     min-width: 180px; 
     
     background-color: #2c2c2c; 
@@ -71,6 +76,7 @@ h1 {
     border-color: #f0f0f0; 
 }
 
+/*parte de cima do card*/
 .card-header {
     height: 150px; 
     display: flex;
@@ -86,6 +92,7 @@ h1 {
     text-align: left;
 }
 
+/*nome do poke*/
 .poke-name {
     text-align: center;
     font-size: 1.1em;
@@ -94,6 +101,7 @@ h1 {
     text-transform: capitalize;
 }
 
+/*area de infos*/
 .info-row {
     display: flex;
     justify-content: space-between;
