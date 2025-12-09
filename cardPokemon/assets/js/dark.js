@@ -1,6 +1,7 @@
+//onde pega o HTML
 const grid = document.getElementById("grid");
 
-// Cores dos Tipos (Foco na cor Dark)
+// Cores dos Tipos 
 const typeColors = {
   normal: "#c6c5b7ff",
   fire: "#EE8130",
@@ -28,43 +29,59 @@ async function fetchAndCreateCard(pokemonNameOrId) {
     const url = `https://pokeapi.co/api/v2/pokemon/${pokemonNameOrId}/`;
     const response = await fetch(url);
 
+    //verifica se deu certo
     if (!response.ok) {
       throw new Error(`Erro ao buscar ${pokemonNameOrId}: ${response.status}`);
     }
 
+    //pega os dados em json
     const data = await response.json();
+    //chama a função que cria o card
     createCardHTML(data);
+    //se der erro
   } catch (error) {
     console.error("Houve um erro no fetch:", error);
   }
 }
-
+//função que cria o card
 function createCardHTML(data) {
+  //pega o nome e coloca a primeira letra maiuscula
    const name = data.name.charAt(0).toUpperCase() + data.name.slice(1);
+  //pega o id e coloca 0s na frente se precisar
   const id = data.id.toString().padStart(3, "0");
+  //pega a imagem
   const imgUrl =
     data.sprites.other["official-artwork"].front_default ||
     data.sprites.front_default;
+    //pega a altura em metros
   const height = data.height / 10;
+  //pega o peso em kg
   const weight = data.weight / 10; 
+  //pega as habilidades
   const abilities = data.abilities
     .map((a) => a.ability.name.replace(/-/g, " "))
+    //pega só as duas primeiras
     .slice(0, 2)
+    //junta em uma string
     .join(", ");
-
+  //pega os status
   const stats = {};
+  //coloca em um objeto
   data.stats.forEach((s) => (stats[s.stat.name] = s.base_stat));
+  //pega ataque e defesa
   const atk = stats["attack"] || 0;
   const def = stats["defense"] || 0;
 
-
+ //pega o tipo principal
   const mainType = data.types[0].type.name;
+  //pega a cor do tipo
   const color = typeColors[mainType] || "#595959ff";
 
- 
+ //cria o card
   const card = document.createElement("div");
-card.classList.add("pokemon-card");
-
+  //adiciona a classe
+  card.classList.add("pokemon-card");
+ //adiciona o HTML do card
   card.innerHTML = `
                 <div class="card-header" style="background-color: ${color};">
                   <img src="${imgUrl}" alt="${name}" class="poke-img">
@@ -97,11 +114,11 @@ card.classList.add("pokemon-card");
                     </div>
                 </div>
             `;
-
+  //adiciona o card ao grid
   grid.appendChild(card);
 }
 
-
+//lista de pokemons dark
 const darkPokemonList = [
     "tyranitar", 
     "greninja", 
@@ -117,7 +134,7 @@ const darkPokemonList = [
     "yveltal"
 ];
 
-
+//inicia o fetch e criação dos cards
 (async function init() {
     for (const pokemon of darkPokemonList) {
         await fetchAndCreateCard(pokemon);
