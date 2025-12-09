@@ -2,7 +2,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #FB4FEA; 
-    color: #e0e0e0; 
+    color: #000000; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,7 +15,7 @@ img {
 }
 
 .pokemon-card {
-    border:1px solid #5e5e5e;
+    border:1px solid #553d4d;
     max-width: 300px;
 }
 
@@ -59,7 +59,7 @@ h1 {
     flex-basis: calc(25% - 20px); 
     min-width: 180px; 
     
-    background-color: #2c2c2c; 
+    background-color: #773168; 
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
